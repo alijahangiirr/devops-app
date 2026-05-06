@@ -23,7 +23,7 @@ pipeline {
         stage('Docker Deploy') {
             steps {
                 // This runs your app on Port 80
-                sh 'docker run -d --name my-app-container -p 80:80 my-devops-app:latest'
+                sh 'docker run -d --name my-app-container -p 80:5000 my-devops-app:latest'
             }
         }
     }
