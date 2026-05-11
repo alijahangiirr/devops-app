@@ -7,7 +7,6 @@ app = Flask(__name__)
 def home():
     return jsonify("DevOps App is running! with webhook on C")
 
-
 @app.route("/health")
 def health():
     return jsonify({"status": "healthy"})
